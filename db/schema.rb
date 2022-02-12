@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20200223102359) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "memos", force: :cascade do |t|
+  create_table "clients", force: :cascade do |t|
     t.string   "title"
     t.string   "body"
     t.datetime "created_at",  null: false

@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-    root to:"memos#index"
-    get "/new", to: "memos#new"
-    post "/create", to: "memos#create"
-    delete "/memos/:id", to: "memos#destroy"
-    get "/memos/:id/edit", to: "memos#edit"
-    patch "/memos/:id", to: "memos#update"
+    root to:"clients#index"
+    get "/new", to: "clients#new"
+    post "/create", to: "clients#create"
+    delete "/clients/:id", to: "clients#destroy"
+    get "/clients/:id/edit", to: "clients#edit"
+    patch "/clients/:id", to: "clients#update"
     get "/categories/:id", to: "categories#show"
     $date = Time.now.in_time_zone('Tokyo').to_s
     root "articles#index"
